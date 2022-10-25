@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dag13_InternetOfThings/Dag13_InternetOfThings.iml" filepath="$PROJECT_DIR$/Dag13_InternetOfThings/Dag13_InternetOfThings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag3_screen_scraping/Dag3_screen_scraping.iml" filepath="$PROJECT_DIR$/Dag3_screen_scraping/Dag3_screen_scraping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag4_socketprogrammering/Dag4_socketprogrammering.iml" filepath="$PROJECT_DIR$/Dag4_socketprogrammering/Dag4_socketprogrammering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag6_TransportlagetDel2_UDP/Dag6_TransportlagetDel2_UDP.iml" filepath="$PROJECT_DIR$/Dag6_TransportlagetDel2_UDP/Dag6_TransportlagetDel2_UDP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag7_Wireshark/Dag7_Wireshark.iml" filepath="$PROJECT_DIR$/Dag7_Wireshark/Dag7_Wireshark.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Dis_Sem3.iml" filepath="$PROJECT_DIR$/.idea/Dis_Sem3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
     </modules>
   </component>
 </project>
