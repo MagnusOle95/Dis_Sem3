@@ -29,7 +29,6 @@ public class App_Opgave15 {
             String tilKonto = inline.readLine();
             System.out.println("Skriv beløbet, du vil overføre i kr");
             int beløb = Integer.parseInt(inline.readLine());
-            System.out.println(fraKonto);
 
             ResultSet fraKontoRes=stmt.executeQuery("select * from konto where kontonr ='" + fraKonto + "'");
             if (fraKontoRes.next()) {
