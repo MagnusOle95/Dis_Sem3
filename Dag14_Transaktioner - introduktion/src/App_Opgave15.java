@@ -28,20 +28,21 @@ public class App_Opgave15 {
             System.out.println("Indtast konto du ønsker at sende til");
             String tilKonto = inline.readLine();
             System.out.println("Skriv beløbet, du vil overføre i kr");
-            double beløb = Double.parseDouble(inline.readLine());
+            int beløb = Integer.parseInt(inline.readLine());
             System.out.println(fraKonto);
 
             ResultSet fraKontoRes=stmt.executeQuery("select * from konto where kontonr ='" + fraKonto + "'");
             if (fraKontoRes.next()) {
-                double fraKontosaldo = fraKontoRes.getInt(2);
+                int fraKontosaldo = fraKontoRes.getInt(2);
                 if (fraKontosaldo >= beløb){
                     ResultSet tilKontoRes=stmt.executeQuery("select * from konto where kontonr ='" + tilKonto + "'");
                     if (tilKontoRes.next()){
-                        double tilKontosaldo = tilKontoRes.getInt(2);
-                        double nyFrakontoSaldo = fraKontosaldo - beløb;
-                        double nyTilkontoSaldo = tilKontosaldo + beløb;
-                        System.out.println(fraKontosaldo + " " + nyFrakontoSaldo + " " + tilKontosaldo + " " + nyTilkontoSaldo);
-
+                        int tilKontosaldo = tilKontoRes.getInt(2);
+                        int nyFrakontoSaldo = fraKontosaldo - beløb;
+                        int nyTilkontoSaldo = tilKontosaldo + beløb;
+                        stmt.execute("update konto set saldo = '" + nyFrakontoSaldo + "' where kontonr = '" + fraKonto + "'");
+                        stmt.execute("update konto set saldo = '" + nyTilkontoSaldo + "' where kontonr = '" + tilKonto + "'");
+                        System.out.println("Transaktion komplet");
                     }
                     else{
                         System.out.println("Til konto eksistere ikke");
@@ -66,8 +67,6 @@ public class App_Opgave15 {
                 stmt.close();
             if (minConnection != null)
                 minConnection.close();
-
-
         }
         catch (Exception e) {
             System.out.print("fejl:  "+e.getMessage());
