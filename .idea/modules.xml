@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Dag4_socketprogrammering/Dag4_socketprogrammering.iml" filepath="$PROJECT_DIR$/Dag4_socketprogrammering/Dag4_socketprogrammering.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dag6_TransportlagetDel2_UDP/Dag6_TransportlagetDel2_UDP.iml" filepath="$PROJECT_DIR$/Dag6_TransportlagetDel2_UDP/Dag6_TransportlagetDel2_UDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dag7_Wireshark/Dag7_Wireshark.iml" filepath="$PROJECT_DIR$/Dag7_Wireshark/Dag7_Wireshark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dag_17_Distribueret_Databaser/Dag_17_Distribueret_Databaser.iml" filepath="$PROJECT_DIR$/Dag_17_Distribueret_Databaser/Dag_17_Distribueret_Databaser.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Dis_Sem3.iml" filepath="$PROJECT_DIR$/.idea/Dis_Sem3.iml" />
     </modules>
   </component>
